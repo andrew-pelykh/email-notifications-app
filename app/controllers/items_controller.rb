@@ -5,6 +5,7 @@ class ItemsController < ApplicationController
   # GET /items.json
   def index
     @items = Item.all
+    @subscriber = Subscriber.new()
   end
 
   # GET /items/1

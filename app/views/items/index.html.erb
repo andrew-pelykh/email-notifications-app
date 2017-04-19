@@ -27,3 +27,17 @@
 <br>
 
 <%= link_to 'New Item', new_item_path %>
+
+<h2>Subscribe to get mail after new item will be created</h2>
+
+<%= form_for(@subscriber) do |f| %>
+
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
