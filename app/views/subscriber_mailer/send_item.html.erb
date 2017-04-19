@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h2> Hello, <%= @user.email %> </h2>
+    <p>There is the new <%= link_to "#{@item.name}", item_url(@item.id)%> only for <%=@item.price%> dollars</p>
+    <br>
+    <%= link_to "Click this link to unsubscribe", logout_url(@user.id) %>
+  </body>
+</html>

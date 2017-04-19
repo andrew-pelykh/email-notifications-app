@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h2>Welcome to my example app, <%= @user.email.to_s %></h2>
+    <p>You have successfully subscribed</p>
+
+    <%= link_to "Click this link to unsubscribe", logout_url(@user.id) %>
+  </body>
+</html>
