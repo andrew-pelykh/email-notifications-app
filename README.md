@@ -1,24 +1,15 @@
-# README
+# Email notifications example
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Example rails app, that send email to subscribers when new item is comming.
+Aslo send welcome email to new subscriber.
 
-Things you may want to cover:
+## Get started
 
-* Ruby version
+1. Run ```bundle install``` in root directory to upload gems.
 
-* System dependencies
+2. This app uses postgresql. Make sure you have configurated your
+```database.yml``` file to work with it.
 
-* Configuration
+3. To create database run ```rake db:setup``` in root directory.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+4. To run server use ```rails s``` command.
